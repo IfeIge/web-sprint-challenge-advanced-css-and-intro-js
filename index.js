@@ -200,7 +200,6 @@ export const artists = [
       "paintings": 328
     }
 ]
-
 // 🖌🖼 M V P 🖼🖌 //
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -208,17 +207,17 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+console.log(artists[0].name)
 
 //(2) Bio of the third artist (2nd index) in the array 
-
+console.log(artists[2].bio)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
-
+artists[8].name = 'Vincent Van Gogh';
+// it would be .splice(), Im just am not sure how to remove a specific key in an object in an array.
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -228,8 +227,8 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array, num) {
+  return `the artist at index ${}`
 }  
 
 
